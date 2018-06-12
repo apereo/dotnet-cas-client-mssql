@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <metadata>
+        <id>DotNetCasClient.MSSql</id>
+        <version>$version$</version>
+        <title>$title$</title>
+        <authors>Marvin S. Addison,Scott Battaglia,Scott Holodak,Misagh Moayyed,William G. Thompson,Jr.,Catherine D. Winfrey,Blair Allen,Jason Kanaris</authors>
+        <owners>$owners$</owners>
+        <licenseUrl>https://github.com/apereo/dotnet-cas-client-mssql/blob/master/LICENSE.txt</licenseUrl>
+        <projectUrl>https://github.com/apereo/dotnet-cas-client-mssql</projectUrl>
+        <iconUrl>https://avatars2.githubusercontent.com/u/4679233?v=3&amp;s=64</iconUrl>
+        <copyright>$copyright$</copyright>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>$description$</description>
+        <language>en-US</language>
+        <tags>Apereo Jasig CAS Authentication mssql mssqlserver SQL Authn ASP.NET MVC MVC2 MVC3 MVC4 MVC5 WebForms</tags>
+        <dependencies>
+	      <group>
+	        <dependency id="DotNetCasClient" version="1.1.0" />
+	      </group>
+	    </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\**\DotNetCasClient.MSSql.*" target="lib" />
+    </files>
+</package>

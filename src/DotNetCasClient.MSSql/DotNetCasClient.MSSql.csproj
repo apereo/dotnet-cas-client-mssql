@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+    <PropertyGroup>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RootNamespace>DotNetCasClient</RootNamespace>
+        <AssemblyName>DotNetCasClient.MSSql</AssemblyName>
+        <TargetFrameworks>net45;net40;net35</TargetFrameworks>
+        <OldToolsVersion>2.0</OldToolsVersion>
+        <ProjectGuid>{75080015-BA5A-42B6-BD0B-2586D71FC5B4}</ProjectGuid>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
+        <DefineConstants>NET45</DefineConstants>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(TargetFramework)'=='net40'">
+        <DefineConstants>NET40</DefineConstants>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(TargetFramework)'=='net35'">
+        <DefineConstants>NET35</DefineConstants>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+        <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+        <DefineConstants>TRACE;DEBUG</DefineConstants>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+        <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+        <DefineConstants>TRACE</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='net45' OR '$(TargetFramework)'=='net40' OR '$(TargetFramework)'=='net35'">
+        <Reference Include="System" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Configuration" />
+        <Reference Include="System.Xml" />
+        <Reference Include="System.Xml.Linq" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='net45' OR '$(TargetFramework)'=='net40'">
+        <Reference Include="Microsoft.CSharp" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="DotNetCasClient" Version="1.1.0" />
+    </ItemGroup>
+</Project>
