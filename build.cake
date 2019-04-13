@@ -1,6 +1,7 @@
 #tool "nuget:?package=NUnit.ConsoleRunner&version=3.4.0"
-#tool "nuget:?package=GitVersion.CommandLine"
-#addin "nuget:?package=Cake.Incubator&version=1.5.0"
+#tool "nuget:?package=GitVersion.CommandLine&version=4.0.0"
+#addin "nuget:?package=Cake.Incubator&version=4.0.2"
+using Cake.Incubator.LoggingExtensions;
 
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -72,7 +73,7 @@ if (isAppveyorBuild)
 else
 {
     // Local developer machine build.
-    nugetPackageVersion = versionInfo.MajorMinorPatch + "-local-" + versionInfo.CommitsSinceVersionSource.PadLeft(5, '0');
+    nugetPackageVersion = versionInfo.MajorMinorPatch + "-local-" + versionInfo.CommitsSinceVersionSource.Value.ToString().PadLeft(5, '0');
 }
 
 //////////////////////////////////////////////////////////////////////
