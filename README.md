@@ -14,3 +14,15 @@
 This project is an add-on to the Apereo .NET CAS Client that implements the proxy and service ticket managers backed by a Microsoft SQL Server data store.
 
 By storing your proxy and service tickets in a centralized data store your applications running in a distributed, clustered or load balanced environment will all have access to the same proxy and service ticket data.  This is not possible to achieve with the default in-memory proxy and service ticket managers that ships with the Apereo .NET CAS Client.
+
+## Contributing ##
+
+[![Contributing Guide](https://img.shields.io/badge/Contributing-guide-green.svg?style=flat)](https://apereo.github.io/cas/developer/Contributor-Guidelines.html)
+[![Contributors](https://img.shields.io/github/contributors/apereo/dotnet-cas-client-mssql.svg)](https://github.com/apereo/dotnet-cas-client-mssql/graphs/contributors)
+[![Open Pull Requests](https://img.shields.io/github/issues-pr/apereo/dotnet-cas-client-mssql.svg?style=flat)](https://github.com/apereo/dotnet-cas-client-mssql/pulls)
+
+If you have already identified an enhancement or a bug, it is STRONGLY recommended that you simply submit a pull request to address the case. There is no need for special ceremony to create separate issues. The pull request IS the issue and it will be tracked and tagged as such.
+
+This project follows the [GitFlow](https://github.com/nvie/gitflow) branching/workflow model.  As such, please base all of the code changes in your pull request off of the `develop` branch in our repo.  We will merge your pull request, if accepted, into our `develop` branch.
+
+Also take a look at the [Apereo Contributor Guidelines](https://apereo.github.io/cas/developer/Contributor-Guidelines.html) article for an more information about contributing.
